@@ -1,5 +1,5 @@
-/* Reset some default styles */
-* {
+
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,11 +11,8 @@ body {
 }
 :hover.container{
 color: #ff9900;
-
-
-
 }
-
+   
 :hover.logo{
 color: #ff9900;
 
@@ -27,11 +24,13 @@ justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 }
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  /* Styles for screens between 600px and 900px wide */
+}
 
 
 
-
-.container {
+.header{
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -85,11 +84,12 @@ main {
 }
 
 .hero {
-  background-image: url('hero.jpg');
+  background-image: url(hero.jpeg) ;
   background-size: cover;
   color:black;
   padding: 100px;
   text-align: center;
+
 }
 
 .hero h1 {
@@ -105,7 +105,7 @@ main {
 .cta-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #ff9900;
+  background-color: #369fa8;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -158,3 +158,4 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
