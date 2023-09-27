@@ -1,13 +1,32 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="question.js">
+    <title>Student Scores</title>
+    <link href="dom.css" rel="stylesheet" >
 </head>
 <body>
-    <h3>QUESTION / ANSWER </h3>
-<script src="question.js"></script>
+    <h1><b>Score Counter</b></h1>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="fatherName" placeholder="Father's Name">
+        <input type="number" id="score" placeholder="Score">
+        <button type="button" onclick="addToTable()">Add info</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Father's Name</th>
+                <th>Score</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+          
+        </tbody>
+    </table>
+    <script src="dom.js"></script>
 </body>
 </html>
