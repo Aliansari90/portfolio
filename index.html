@@ -1,32 +1,29 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Scores</title>
-    <link href="dom.css" rel="stylesheet" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wardrobe</title>
+   
 </head>
 <body>
-    <h1><b>Score Counter</b></h1>
-    <form id="myForm">
-        <input type="text" id="name" placeholder="Name">
-        <input type="text" id="fatherName" placeholder="Father's Name">
-        <input type="number" id="score" placeholder="Score">
-        <button type="button" onclick="addToTable()">Add info</button>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Father's Name</th>
-                <th>Score</th>
-                <th>Total</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody">
-          
-        </tbody>
-    </table>
-    <script src="dom.js"></script>
+    <header class="header">
+        <h1>Gallery</h1>
+    
+    </header>
+    <div class="gallery">
+
+    </div>
+    <div class="popup-container">
+        <span class="close-popup">&times;</span>
+        <img class="popup-image" src="" alt="Popup Image">
+    </div>
+    
+    <script src="img.js"></script>
 </body>
 </html>
+
+
+
+
