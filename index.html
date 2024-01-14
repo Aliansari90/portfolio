@@ -1,28 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Change Background Color with Toggle Button</title>
-</head>
-<body>
-    <div id="myElement" style="width: 1200px; height: 600px; background-color: lightblue;">
-        This is a <b>Box</b> with a background color.
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="watch.css" />
+  </head>
+  <body>
+    <div class="stopwatch">
+      <h1 id="displayTime">00:00:00</h1>
+      <div class="buttons">
+        <img src="images/stop.png" onclick="watchStop()" />
+        <img src="images/start.png" onclick="watchStart()" />
+        <img src="images/reset.png" onclick="watchReset()" />
+      </div>
     </div>
-
-    <button id="toggleButton"><B>Change Colors</B></button>
-
-    <script>
-                var colors = ["lightblue", "lightgreen", "lightcoral", "lightyellow","black","white"];
-        var currentIndex = 0; 
-
-        function changeBackgroundColor() {
-            var element = document.getElementById("myElement");
-            
-            element.style.backgroundColor = colors[currentIndex];
-            
-            currentIndex = (currentIndex + 1) % colors.length;
-        }
-
-        document.getElementById("toggleButton").addEventListener("click", changeBackgroundColor);
-    </script>
-</body>
+    <script src="watch.js"></script>
+  </body>
 </html>

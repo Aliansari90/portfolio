@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&display=swap");
+body {
+  background: #edeaff;
+  font-family: "Courier Prime", monospace;
+}
+.stopwatch {
+  width: 90%;
+  max-width: 600px;
+  background-image: url(images/background.png.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 0;
+  color: black;
+  margin: 200px auto 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0, 2);
+}
+.stopwatch {
+  margin-top: 60px;
+  font-size: 60px;
+  font-weight: 300;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons img {
+  width: 50px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.buttons img:nth-child(2) {
+  width: 80px;
+}
